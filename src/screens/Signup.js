@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "../style.css";
 
 const Signup = () => {
   const [credentials, setCredentials] = useState({
@@ -38,7 +39,7 @@ const Signup = () => {
   return (
     <>
       <section className="vh-80" style={{ backgroundColor: "#eee" }}>
-        <div className="container h-100" style={{transform:"scale(0.8)" ,overflowY:"hidden"}}>
+        <div id="signUpForm" className="container h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col-lg-12 col-xl-11">
               <div className="card text-black" style={{ borderRadius: "25px" }}>

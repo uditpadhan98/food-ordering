@@ -1,0 +1,11 @@
+@media (min-width: 800px) and (max-width: 1200px) {
+    #signUpForm{
+        transform: scale(0.8);
+        margin-top: -50px;
+        height: 567px !important;
+    }
+}
+
+#logInBtn{
+    height: 40px;
+}
