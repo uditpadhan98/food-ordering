@@ -1,9 +1,9 @@
 const mongoose=require("mongoose");
+// const mongoURI=require("")
 const mongoURI='mongodb+srv://you_dit:you_dit@uditapi.tbfthnc.mongodb.net/foodmern?retryWrites=true&w=majority'
 mongoose.set("strictQuery", false);
-const mongoDB=async()=>{
-    await mongoose.connect(mongoURI,{useNewUrlParser:true},(err,result)=>{
-        
+const mongoDB=async(uri)=>{
+    await mongoose.connect(uri,{useNewUrlParser:true},(err,result)=>{       
         if(err){
             console.log("Error found",err);
         }

@@ -1,6 +1,7 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
-const port = 5000;
+const PORT=process.env.PORT || 5000;
 const mongoDB = require("./db");
 mongoDB();
 
@@ -13,19 +14,6 @@ const corsOptions = {
 
 app.use(cors(corsOptions)); // Use this after the variable declaration
 
-// app.use((req, res, next) => {
-//   res.setHeader("Access-Control-Origin", "http://localhost:3000");
-//   res.header(
-//     "Access-Control-Allow-Headers",
-//     "Origin,X-Requested-with,Content-Type,Accept"
-//   );
-//   next();
-// });
-
-// const bodyParser = require("body-parser")
-
-// app.use(bodyParser.urlencoded({ extended: true }));
-
 app.use(express.json());
 app.use("/api", require("./Routes/CreateUser"));
 app.use("/api", require("./Routes/DisplayData"));
@@ -34,6 +22,19 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}`);
+// });
+
+const start=async()=>{
+  try {
+      await mongoDB(process.env.MONGO_URI);
+      app.listen(PORT,()=>{
+          console.log(`${PORT} Yes I am connected`);
+      });
+  } catch (error) {
+      console.log(error);
+  }
+};
+
+start();
