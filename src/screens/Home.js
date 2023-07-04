@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
+import "../style.css";
 import { BASE_URL } from './Helper';
 
 const Home = () => {
@@ -27,7 +28,7 @@ const Home = () => {
   },[])
 
   return (
-    <div>
+    <div id="home-container">
       <div><Navbar /></div>
       <div>
         <div
@@ -119,7 +120,7 @@ const Home = () => {
                   foodItem.filter((item)=>(item.CategoryName===data.CategoryName)  && (item.name.toLowerCase().includes(search.toLowerCase())))
                   .map(filterItems=>{
                     return(
-                      <div key={filterItems._id} className="col-12 col-md-6 col-lg-4">
+                      <div key={filterItems._id} className="col-12 col-md-6 col-lg-4" id="foodItem-card">
                         <Card foodItem={filterItems}
                           options={filterItems.options[0]}
                           

@@ -27,7 +27,7 @@ const Card = (props) => {
       }
       else if (food.size !== size) {
         await dispatch({ type: "ADD", id: props.foodItem._id, name: props.foodItem.name, price: finalPrice, qty: qty, size: size,img: props.ImgSrc })
-        console.log("Size different so simply ADD one more to the list")
+        // console.log("Size different so simply ADD one more to the list")
         return
       }
       return
@@ -83,4 +83,4 @@ const Card = (props) => {
   )
 }
 
-export default Card
+export default Card;

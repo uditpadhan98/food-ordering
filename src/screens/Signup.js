@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../style.css";
 import { BASE_URL } from './Helper';
 
 const Signup = () => {
+  let navigate=useNavigate();
   const [credentials, setCredentials] = useState({
     name: "",
     email: "",
@@ -26,7 +27,13 @@ const Signup = () => {
       }),
     });
     const json = await response.json();
-    console.log(json);
+    
+    // console.log(json);
+    
+    if (json.success) {
+      alert("Account created successfully");
+      navigate("/");
+    }
 
     if (!json.success) {
       alert("Enter Valid Credentials");
