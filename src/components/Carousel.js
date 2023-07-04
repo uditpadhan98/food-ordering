@@ -1,4 +1,5 @@
 import React from "react";
+import image1 from "../images/1.jpg";
 
 export default function Carousel() {
   return (
@@ -26,28 +27,31 @@ export default function Carousel() {
             </form>
           </div>
           <div className="carousel-item active">
-            <img
-              src="https://source.unsplash.com/random/600x600/?burger"
-              className="d-block w-100"
-              style={{ filter: "brightness(70%)" }}
+            {/* <img
+            src={image1}
+              // src="https://source.unsplash.com/random/600x600/?burger"
+              // className="d-block w-80"
+              // style={{ filter: "brightness(70%)" ,objectFit:"contain"}}
               alt="..."
-            />
+            /> */}
           </div>
           <div className="carousel-item">
-            <img
-              src="https://source.unsplash.com/random/600x600/?pastry"
-              className="d-block w-100"
-              style={{ filter: "brightness(70%)" }}
+            {/* <img
+            src={image1}
+              // src="https://source.unsplash.com/random/600x600/?pastry"
+              // className="d-block w-80"
+              // style={{ filter: "brightness(70%)",objectFit:"contain"}}
               alt="..."
-            />
+            /> */}
           </div>
           <div className="carousel-item">
-            <img
-              src="https://source.unsplash.com/random/600x600/?barbeque"
-              className="d-block w-100"
-              style={{ filter: "brightness(70%)" }}
+            {/* <img
+            src={image1}
+              // src="https://source.unsplash.com/random/600x600/?barbeque"
+              // className="d-block w-80"
+              // style={{ filter: "brightness(70%)",objectFit:"contain" }}
               alt="..."
-            />
+            /> */}
           </div>
         </div>
         <button

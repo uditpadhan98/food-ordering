@@ -9,3 +9,8 @@
 #logInBtn{
     height: 40px;
 }
+
+#logInForm{
+    border-radius: 25px;
+    background-color: white;
+}

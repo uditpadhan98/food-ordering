@@ -14,7 +14,7 @@ const Footer = () => {
               
             </svg>
           </Link>
-          <span className="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+          <span className="mb-3 mb-md-0 text-muted">© {new Date().getFullYear()}Company, Inc</span>
         </div>
 
         <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
