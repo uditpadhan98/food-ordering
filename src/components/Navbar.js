@@ -10,6 +10,7 @@ const Navbar = () => {
   const navigate=useNavigate();
 
   const [cartView,setCartView]=useState(false);
+  const [toggle,setToggle]=useState(false);
 
   const handleLogout=()=>{
     localStorage.removeItem("authToken");
@@ -23,17 +24,19 @@ const Navbar = () => {
             FoodOps
           </Link>
           <button
+            // {{toggle}?aria-expanded="true":"aria-expanded"="false"}
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
+            // data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
-            aria-expanded="false"
+            // aria-expanded={toggle?"true":"false"}
+            onClick={()=>setToggle(!toggle)}
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div className={toggle?"collapse navbar-collapse show":"collapse navbar-collapse"}  id="navbarNav">
             <ul className="navbar-nav me-auto">
               <li className="nav-item">
                 <Link className="nav-link active fs-5" aria-current="page" to="/">
