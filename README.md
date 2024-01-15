@@ -89,7 +89,15 @@ Visit `http://localhost:3000` in your browser to use the application.
 
 ## Screenshots
 
-Include screenshots or GIFs showcasing the different features of your application.
+<img width="960" alt="Screenshot 2024-01-15 200821" src="https://github.com/uditpadhan98/food-ordering/assets/105899769/5c2d7a11-764a-4945-b631-be92fcb3f7d4">
+<img width="960" alt="Screenshot 2024-01-15 200916" src="https://github.com/uditpadhan98/food-ordering/assets/105899769/a55c9b03-4462-46bd-b83d-a2d252e53048">
+<img width="960" alt="Screenshot 2024-01-15 200942" src="https://github.com/uditpadhan98/food-ordering/assets/105899769/f2576fe3-0672-4841-868e-5a49625652e4">
+<img width="960" alt="Screenshot 2024-01-15 200952" src="https://github.com/uditpadhan98/food-ordering/assets/105899769/26d64dde-bc0f-4d86-a528-a7d8e749ebef">
+<img width="960" alt="Screenshot 2024-01-15 200958" src="https://github.com/uditpadhan98/food-ordering/assets/105899769/c30b3db0-68d9-4eb5-a6ee-8a0911c35307">
+
+
+
+
 
 ## Contributing
 
