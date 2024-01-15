@@ -43,7 +43,7 @@ This project is a full-stack web application for food ordering, built using the 
 1. Clone the repository:
 
 ```bash
-git clone [https://github.com/your-username/mern-food-ordering.git](https://github.com/uditpadhan98/food-ordering)
+git clone https://github.com/uditpadhan98/food-ordering
 cd food-ordering
 ```
 
