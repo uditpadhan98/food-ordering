@@ -12,7 +12,6 @@ This project is a full-stack web application for food ordering, built using the 
 - [Usage](#usage)
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
